@@ -1,0 +1,183 @@
+/* .hoteImg{
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    
+} */
+.hotelContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 1000px;
+}
+.hotelWrapper{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+.hotelImageWrapper{
+    width: 33%;
+}
+.hoteImg{
+    width: 100%;
+    object-fit: cover;
+    height: 400px;
+}
+.hotelTitle{
+    font-size: 24px;
+}
+.hotelAdress{
+     font-size: 12px;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+.hotelDistance{
+    color: #0071c2;
+    font-weight: 500;
+}
+.hotelPriceHighlight{
+   color: #1fad74;
+   font-weight: 500; 
+}
+.hotelImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.hotelImages img{
+    width: 800px;
+    height: 600px;
+}
+.bookNow{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hotelDetails{
+   display: flex;
+   justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+.hotelDetailsText{
+    flex: 3;
+}
+.hotelDetailPrice{
+    flex: 1;
+    background-color: #ebf3ff;
+    
+}
+.hotelDesc{
+    font-size: 14px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hotelDetailPrice>h1{
+    font-size: 18px;
+    color: #555;
+
+}
+.hotelDetailPrice>span{
+    font-size: 14px;
+}
+.hotelDetailPrice>h2{
+    font-weight: 300;
+}
+.hotelDetailPrice>button{
+    border: none;
+    padding: 10px 20px;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.slider{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(132, 139, 139); */
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+.sliderWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .pListImage{
+    width: 80%;
+    height: 80vh;
+} */
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: lightgray;
+    cursor: pointer;
+}
+.arrow{
+    margin: 20px;
+    font-size: 50px;
+    color: lightgray;
+    cursor: pointer;
+}
+.bokinginfo{
+    display: flex;
+    width: 600px;
+    height: 700px;
+    background-color: #0071c2;
+    margin-left: 1200px;
+    margin-top: -650px;
+    background-color: #b8c2d2;
+    border-radius: 15px;
+}
+.inputFields{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30%;
+    
+}
+.inputFields input{
+    width: 400px;
+    height: 70px;
+    margin-bottom: 10px;
+   
+}
+.headerSearch-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.HeaderSearchInput{
+    border: none;
+    outline: none;
+ 
+}
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}

@@ -1,0 +1,77 @@
+.homeContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.featured{
+    width: 100%;
+   min-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  
+ justify-items: center;
+  
+    /* margin-left: 130px; */
+    z-index: 1;
+}
+.featuredImage{
+    width: 100%;
+    
+    object-fit: cover;
+}
+.featuredItem{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70%;
+    border: 2px solid grey;
+    background-color: red;
+}
+.featuredTilte{
+    position: relative;
+    bottom: 18px;
+    left: 20px;
+    color: grey;
+    font-size: 9px;
+    
+}
+.pListImage{
+    width: 300px;
+    height: 300px;
+}
+.featuredTilte>button{
+    margin-left: 275px;
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    opacity: 50%;
+    background-color: green;
+    color: white;
+}
+
+.hotelImageDiv{
+   
+    width: 100%;
+    height: 250px;
+}
+.hotelImageDiv img{
+    height: 250px;
+    width: 100%;
+}
+
+.hotelDiv{
+    height: 500px;
+   
+    background-color: red;
+    width: 60%;
+}
+.hotelDetaildDiv{
+  
+    padding: 2%;
+
+}
