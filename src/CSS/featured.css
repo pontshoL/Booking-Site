@@ -67,11 +67,20 @@
 .hotelDiv{
     height: 500px;
    
-    background-color: red;
+    background-color: rgb(201, 221, 228);
     width: 60%;
 }
 .hotelDetaildDiv{
   
     padding: 2%;
 
+}
+.btnFeatures{
+    width: 100px;
+    height: 40px;
+    opacity: 60%;
+    color: cadetblue;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: black;
 }

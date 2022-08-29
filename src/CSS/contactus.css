@@ -1,0 +1,13 @@
+
+.contacts{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    height: 700px;
+    background-color: rgb(215, 211, 211);
+    margin-top: 10%;
+}
+.numbers>span{
+    margin-left: 30%;
+    font-size: 30px;
+}

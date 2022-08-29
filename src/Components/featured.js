@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 function Featured(){
    const [hotels, setHotels] = useState([]);
+   const [search, setSearch] = useState("");
    useEffect(()=>{
       const getData = async ()=> {
          let data = await getDocs(collection(db,'hotel'))
@@ -17,22 +18,32 @@ function Featured(){
       console.log(hotels)
    },[])
     return(
-      <div className='featured'>
-      {hotels.map((hotel)=>(
-      //      <div className='featuredItem'>
-      //       <div className='featuredImage' >
-      //       <img src={hotel.image} alt="" />
-      //       </div>
-           
-      //      <div className='featuredTilte'>
-      //         <h1>{hotel.name}</h1>
-      //         <h2>{hotel.location}</h2>
-      //         <h2>{hotel.description}</h2>
-      //         <h2>{hotel.price}</h2>
-      //         <button className='btnFeatures'>Features</button>
-      //      </div>
-      //   </div>
 
+      <div className='featured'>
+         <div className='header-search'>
+                  <div className='inputSearch'>
+                      <input type="text" placeholder="Enter Location" onChange={((e)=>setSearch(e.target.value))}/>
+                      <div className='btn'>
+                      <button className='headerBtn' /*={handleSearch}*/>Search</button>
+                      </div>
+                     
+                  </div>
+                   <div className='headerSearch-item'>
+                        
+                   </div>
+
+               </div>
+
+      {hotels.filter((hotel)=>{
+         if (hotel.location.toLowerCase().includes(search.toLowerCase())) {
+            return(hotel);
+         } else {
+             if (search == "") {
+               return(hotel);
+             }
+         }
+      }).map((hotel)=>(
+      
       <>
          <div className='hotelDiv'>
              <div className='hotelImageDiv'>
@@ -52,24 +63,6 @@ function Featured(){
       </>
       ))}
        
-
-       {/* <div className='featuredItem'>
-          <img src="hotel3.jfif" alt="" className='featuredImage' />
-          <div className='featuredTilte'>
-             <h1>Durban</h1>
-             <h2>693 properties</h2>
-          </div>
-       </div>
-       
-       <div className='featuredItem'>
-          <img src="hotel4.jpg" alt="" className='featuredImage' />
-          <div className='featuredTilte'>
-             <h1>Johannesburg</h1>
-             <h2>693 properties</h2>
-          </div>
-       </div>
-        */}
-
     
     </div>
     )

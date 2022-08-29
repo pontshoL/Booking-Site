@@ -1,0 +1,49 @@
+.mainAbout{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(215, 211, 211);
+}
+.text1{
+    display: flex;
+    margin-top: 30px;
+    width: 60%;
+    height: 300px;
+    font-size: 20px;
+}
+.image{
+   margin-left: 50px;
+}
+image>img{
+    width: 300px;
+    height: 300px;
+}
+.text2{
+    display: flex;
+    margin-top: 30px;
+    width: 60%;
+    height: 300px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.image2{
+   margin-right: 30px;
+}
+.image2>img{
+    width: 400px;
+    height: 300px;
+}
+.button{
+    margin-left: 90%;
+    margin-top: 5px;
+}
+.button> button{
+    height: 50px;
+    font-size: 20px;
+    border-radius: 60px;
+    background-color: rgb(36, 35, 35);
+    color: cadetblue;
+}
