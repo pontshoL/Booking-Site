@@ -9,9 +9,9 @@ function AboutUs(){
         <div>
              <Navbar />
              <Header/>
-             <Link to={`/homepage`}>
+             <Link to={`/`}>
              <div className="button">
-                <button>Go To HomePage</button>
+                {/* <button>Go To HomePage</button> */}
              </div>
              </Link>
             <div className="mainAbout">

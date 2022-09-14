@@ -12,11 +12,24 @@ function Login() {
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     
+    const Validate = () =>{
+        const PassValidate = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        if (email == '' && password == '') {
+            alert('your form cannot be empty')
+        } else if(email == ''){
+            alert('your email cannot be empty')
+        }else if(!PassValidate.test(password)){
+            alert('Your password should contain minimum eight characters, at least one letter and one number')
+        }else{
+            login()
+        }
+    }
+
     
     const login = () => {
         signInWithEmailAndPassword(auth, email, password).then(() => {
-            navigate("/homepage");
-            console.log('signed in')
+            navigate("/");
+            alert('Signed in successfully')
         }).catch((error) => {
              console.log(error)
             
@@ -24,13 +37,13 @@ function Login() {
 
     }
     return (
-        <div className='main'>
-                    <div className='form'>
-                        <div className='imge'></div>
+        <div className='LoginMain'>
+                    <div className='SignInForm'>
+                        <div className='SignInForMimge'></div>
                         <h1 style={{color:"white", paddingBottom:100}}>Sign In</h1>
-                            <input type={'email'} placeholder="Email" className='name' onChange={((e) => setEmail(e.target.value))} /><br></br>
-                            <input type={'password'} placeholder="Password" className='pass' onChange={((e) => setPassword(e.target.value))} /><br></br>
-                            <button id='btn' onClick={login}>Sign In</button>
+                            <input type={'email'} placeholder="Email" className='name' onChange={((e) => setEmail(e.target.value))} />
+                            <input type={'password'} placeholder="Password" className='pass' onChange={((e) => setPassword(e.target.value))} />
+                            <button id='btn' onClick={Validate}>Sign In</button>
                             <span>
                                 <Link to="/reset">Forgot Password?</Link>
                             </span>

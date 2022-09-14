@@ -23,7 +23,6 @@ import { Link } from 'react-router-dom';
 
 
 
-
 function Hotel({ hotels }) {
   // const [stayD, setDate] = useState()
   //     const [hotels,setHotels]=useState([])
@@ -59,7 +58,6 @@ function Hotel({ hotels }) {
 
 
 
-
   //book function
   const reserve = () => {
     const bookRef = collection(db, 'bookings')
@@ -75,8 +73,6 @@ function Hotel({ hotels }) {
       clientContact: _contactNo,
       clientEmail: _email,
       days:accumalatedDays
-
-
     }
 
     addDoc(bookRef, bookingData).then(() => {
@@ -85,13 +81,6 @@ function Hotel({ hotels }) {
       console.log(err)
     })
   }
-
-
-
-  //   let difference =  second.getTime() -  first.getTime()
-
-
-
 
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
@@ -110,10 +99,7 @@ function Hotel({ hotels }) {
 
   const [hotelDetails, setHotelDetails] = useState([])
   //funtion to calculate amount to be paid
-
   const { id } = useParams();
-
-
   //variables
   let amount;
   let name;
@@ -180,17 +166,21 @@ function Hotel({ hotels }) {
               <div className='hotelAdress'>
                 <h1>{res.name}</h1>
                 <FontAwesomeIcon icon={faLocationDot} />
-                <span>{res.location}</span>
+                <span className='span'>{res.location}</span>
               </div>
               <div className='hotelWrapper'>
                 <div className='image-desc'>
                   <div className='hotelImages'>
                     <img src={res.image} />
-                    <img src={hotel1} />
+                    <img src={res.image} />
+                    <img src={res.image} />
+                    <img src={res.image} />
+                    {/* <img src={hotel1} />
                     <img src={hotel2} />
-                    <img src={hotel4} />
                     <img src={hotel5} />
-                    <img src={hotel3} />
+                    <img src={hotel3} /> */}
+                     {/* <img src={hotel4} /> */}
+                    
                   </div>
 
                   <div className='Description'>
@@ -198,12 +188,12 @@ function Hotel({ hotels }) {
                     <h1>Stay in the heart of Bliss</h1>
                     {res.alternativeDesc}
                     <div className='details'>
-                      <h1>Perfect for a 3-night stay!</h1>
+                      {/* <h1>Perfect for a 3-night stay!</h1>
                       <span>located near Tiantan Park,<br></br> just a 10-minute
                         walk from the National<br></br>
                         Center for the Performing Arts<br></br>
                         and Tian'anmen Square
-                      </span>
+                      </span> */}
                       <h2>
                         <b>Amount:R{res.amount}</b>
                       </h2>

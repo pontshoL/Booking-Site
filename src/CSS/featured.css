@@ -43,7 +43,7 @@
     width: 300px;
     height: 300px;
 }
-.featuredTilte>button{
+.hotelDiv>button{
     margin-left: 275px;
     margin-right: 20px;
     width: 200px;
@@ -55,26 +55,33 @@
 }
 
 .hotelImageDiv{
-   
     width: 100%;
-    height: 250px;
+    height: 100%;
+    border: 2px solid cadetblue;
+    border-radius: 30px;
 }
 .hotelImageDiv img{
-    height: 250px;
+    height: 100%;
     width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
 }
-
 .hotelDiv{
     height: 500px;
-   
     background-color: rgb(201, 221, 228);
-    width: 60%;
+    width: 80%;
+    border-radius: 30px;
+    position: relative;
 }
-.hotelDetaildDiv{
-  
-    padding: 2%;
+.title{
+    position: absolute;
+    bottom: 10px;
+    color: rgb(255, 255, 255);
+}
 
-}
+/* .hotelDetaildDiv{
+    padding: 1%;
+} */
 .btnFeatures{
     width: 100px;
     height: 40px;
@@ -83,4 +90,14 @@
     font-size: 18px;
     border-radius: 5px;
     background-color: black;
+}
+.price-filter-div{
+    background-color: green;
+    margin-left: 65px;
+    height: 60px;
+    border-radius: 15px;
+   
+}
+.p{
+    width: 80px;
 }

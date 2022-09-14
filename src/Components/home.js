@@ -17,7 +17,7 @@ function HomePage(){
               <PropertyList/>
                <h1 className="homeTitle">Browse by property</h1>
               <FeaturedProperty /> */}
-              <Footer />
+              {/* <Footer /> */}
            </div>
         </div>
     )

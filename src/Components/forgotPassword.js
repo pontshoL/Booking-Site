@@ -20,9 +20,9 @@ function ResetPassword() {
          console.log(err)
       })
     return (
-        <div className='main'>
-                    <div className='form'>
-                        <div className='imge'></div>
+        <div className='resetPassMain'>
+                    <div className='resetform'>
+                        <div className='resetImge'></div>
                         <form onSubmit={sendPasswordResetEmail}>
                             <h1 style={{color:"white", paddingBottom:100}}>Reset Password</h1>
                             <input type={'email'} placeholder="Email" className='name' onChange={((e) => setEmail(e.target.value))} /><br></br>
